@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        
+    </nav>
+
+    <h1>STOCKS</h1>
+    <label for="ticker">Acción</label>
+    <input type="text" id="ticker">
+    <label for="start_date">Start Date</label>
+    <input type="date" id="start_date">
+    <label for="end_date">End Date</label>
+    <input type="date" id="end_date">
+
+    <button onclick="Submit()">Search</button>
+
+    <p id="results">Hello World</p>
+
+    <div id="chart1">
+        <canvas id="timeSeries"></canvas>
+    </div>
+    <div id="chart2">
+        <canvas id="returns"></canvas>
+    </div>
+
+    <table hidden id="mainTable">
+        <thead>
+            <tr id="periods">
+                <th>Account</th>
+            </tr>
+        </thead>
+        <tbody id="finTable">
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+
+</html>
